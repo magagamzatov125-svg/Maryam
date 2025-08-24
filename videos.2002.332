@@ -1,0 +1,15 @@
+# Using dns_search. --max means all of resources. --api shows the results as json.
+# .. -t means use multi-threading.
+maryam -e dns_search -d ibm.com -t 5 --max --api --form 
+# Using youtube. -q means query
+maryam -e youtube -q "<QUERY>"
+maryam -e google -q "<QUERY>"
+maryam -e dnsbrute -d domain.tld
+# Show framework modules
+maryam -e show modules
+# Set framework options.
+maryam -e set proxy ..
+maryam -e set agent ..
+maryam -e set timeout ..
+# Run web API
+maryam -e web api 127.0.0.1 1313
